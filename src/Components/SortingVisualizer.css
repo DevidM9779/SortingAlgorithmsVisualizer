@@ -1,0 +1,31 @@
+.array-container {
+    position: absolute;
+    bottom: 60px;
+}
+
+.array-bar {
+    width: 15px;
+    display: inline-block;
+    margin: 0 1px;
+    background-color: skyblue;
+}
+
+.reset-button {
+    position: absolute;
+    top: 10px;
+    left: 685px;
+}
+
+.sorting-buttons-container {
+    position: absolute;
+    top: 10px;
+    right: 1225px;
+    column-gap: 5px;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
