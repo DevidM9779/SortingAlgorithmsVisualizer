@@ -8,12 +8,14 @@
     display: inline-block;
     margin: 0 1px;
     background-color: skyblue;
+    transition: ease-in-out;
+
 }
 
 .reset-button {
-    position: absolute;
+    /*position: relative;*/
     top: 10px;
-    left: 685px;
+    left: 720px;
 }
 
 .sorting-buttons-container {

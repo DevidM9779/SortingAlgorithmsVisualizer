@@ -1,12 +1,13 @@
-import {Button, IconButton} from "@mui/material";
-import {useState} from "react";
+import {Button} from "@mui/material";
 import getBubbleSortAnimations from "../../Helpers/Sorting-Algos/bubbleSort";
 import getInsertionSortAnimations from "../../Helpers/Sorting-Algos/insertionSort";
+import getSelectionSortAnimations from "../../Helpers/Sorting-Algos/selectionSort";
 
 const PRIMARY_COLOR = "skyblue"
 const SECONDARY_COLOR = "coral"
 const SORTED_COLOR = "green"
 const ANIMATION_SPEED_MS = 10
+
 
 const animationsHandler = (animations) => {
     let colorChanged = false
@@ -52,7 +53,6 @@ const animationsHandler = (animations) => {
 
 const bubbleSort = (array) => {
     const animations = getBubbleSortAnimations(array)
-    console.log(animations)
     animationsHandler(animations)
 }
 
@@ -61,6 +61,11 @@ const insertionSort = (array) => {
     animationsHandler(animations)
 }
 
+const selectionSort = (array) => {
+    const animations = getSelectionSortAnimations(array)
+    console.log(animations)
+    animationsHandler(animations)
+}
 
 
 
@@ -70,6 +75,7 @@ const SortingButtons = ({array}) => {
         <div className="sorting-buttons-container">
             <Button className="sorting-button" variant="contained" onClick={() => bubbleSort(array)}>Bubble Sort</Button>
             <Button className="sorting-button" variant="contained" onClick={() => insertionSort(array)}>Insertion Sort</Button>
+            <Button className="sorting-button" variant="contained" onClick={() => selectionSort(array)}>Selection Sort</Button>
         </div>
     )
 
