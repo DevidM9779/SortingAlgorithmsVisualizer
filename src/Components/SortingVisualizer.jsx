@@ -60,7 +60,7 @@ const SortingVisualizer = () => {
 
     return (
         <div className="container">
-            <div>
+            <div className={"top-bar"}>
                 <SortingButtons array={array}/>
                 <IconButton className={clsx({
                     [classes.refresh]: true,
