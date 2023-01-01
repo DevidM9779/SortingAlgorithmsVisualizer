@@ -28,7 +28,7 @@ npm install # or yarn
 3.  Start the development server:
 
 ```
-npm start // or yarn start
+npm start # or yarn start
 ```
 
 This will open the app in your default browser at *http://localhost:3000*.
