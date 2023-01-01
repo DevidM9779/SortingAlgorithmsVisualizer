@@ -16,12 +16,12 @@ To run this project locally:
 1.  Clone the repository:
 
 ```
-git clone https://github.com/[USERNAME]/sorting-algorithms-visualizer.git
+git clone https://github.com/DevidM9779/SortingAlgorithmsVisualizer.git
 ```
 2.  Install dependencies:
 
 ```
-cd sorting-algorithms-visualizer
+cd SortingAlgorithmsVisualizer
 npm install # or yarn
 ```
 
